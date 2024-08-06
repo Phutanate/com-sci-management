@@ -124,7 +124,6 @@ if ($PAGE > 1) {
                                 $TOTAL_DATA = data_row_sql($sql_row);
 
                                 $TOTAL_PAGE = ceil($TOTAL_DATA / $LIMIT);
-                                $TOTAL_PAGE = 20;
                                 foreach ($result_thesis as $key_ts => $value_ts) {
                                     $student = get_thesis_student($value_ts['ts_id']);
                                     $adviser = get_thesis_adviser($value_ts['ts_id']);
